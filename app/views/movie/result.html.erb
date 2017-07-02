@@ -1,0 +1,7 @@
+<form action="/movie/result" type="get">
+    <input type="text" name="input_search" value="<%=params[:input_search]%>">
+    <input type="submit" value="검색">
+</form>
+<% @searchresult.each do |p| %>
+    <h4><%=p.inner_text %></h4>
+<% end %>

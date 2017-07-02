@@ -1,0 +1,8 @@
+<form action="/movie/result" type="get">
+    <input type="text" name="input_search">
+    <input type="submit" value="검색">
+</form>
+
+<% @info.each_with_index do |l, i| %>
+    <a href="<%=p["href"]%>"><h4><%= @notices[i].inner_text %></h4></a>
+<% end %>
